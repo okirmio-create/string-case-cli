@@ -1,0 +1,38 @@
+{
+  "name": "string-case-cli",
+  "version": "1.0.0",
+  "description": "Convert strings between naming conventions (camelCase, snake_case, kebab-case, PascalCase, and more)",
+  "type": "module",
+  "bin": {
+    "string-case": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "string",
+    "case",
+    "camel",
+    "snake",
+    "kebab",
+    "pascal",
+    "convert",
+    "cli"
+  ],
+  "author": "okirmio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/okirmio-create/string-case-cli"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.3",
+    "@types/node": "^22.12.0"
+  }
+}
